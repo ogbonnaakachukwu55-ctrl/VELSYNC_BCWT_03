@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #ffffff,
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #1e293b;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+     font-size: 28px;
+     margin-bottom: 25px;
+}
+
+.container > p {
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+button {
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #4f46e5;
+}
+
+.wallet-info{
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.wallet-info p{
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+    color: #cbd5e1;
+}
+
+#disconnectButton {
+    margin-top: 20px;
+    background: #dc2626;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #a5b4fc;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 30px 20px;
+  }
+
+  h1 {
+      font-size: 23px;
+  }
+
+}
