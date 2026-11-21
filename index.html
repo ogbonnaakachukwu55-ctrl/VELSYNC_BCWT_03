@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Wallet Connector</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Web3 Wallet Connector</h1>
+      <p>Connect your Metamask wallet to get started.</p>
+
+      <button id="connectButton">Connect Wallet</button>button>
+
+      <div id="walletInfo" class="wallet-info">
+        <p><strong>Wallet Address:</strong> <span id="walletAddress">Not connected</span></p>
+        <p><strong>Network:</strong> <span id="networkName">Not connected</span></p>
+        <p><strong>Balance:</strong> <span id="walletBalance">Not connected</span></p>
+      </div>
+
+      <button id="disconnectButton" hidden>Disconnect</button>
+
+      <p id="status">Wallet not connected.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
