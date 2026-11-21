@@ -59,17 +59,17 @@ try {
 }
 
 function disconnectWallet(){
-  provider = null;
-  signer = null;
-
   walletAddress.textContent = "Not connected";
   networkName.textContent = "Not connected";
   walletBalance.textContent = "Not connected";
 
-  walletInfor.hidden = true;
+  walletInfo.hidden = true;
   connectButton.hidden = false;
   disconnectButton.hidden = true;
 
+  provider = null;
+  signer = null;
+  
   status.textContent = "Wallet disconnected from this app.";
 }
 
