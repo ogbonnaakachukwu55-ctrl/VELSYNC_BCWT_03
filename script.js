@@ -78,6 +78,7 @@ disconnectButton.addEventListener("click", disconnectWallet);
 
 if (window.ethereum) {
     window.ethereum.on("accountsChanged", async (accounts) => {
+      console.log("Account changed:", accounts);
        try {
            if (accounts.length === 0) {
             disconnectWallet();
